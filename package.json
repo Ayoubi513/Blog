@@ -1,0 +1,25 @@
+{
+  "name": "netninja-cource",
+  "version": "1.0.0",
+  "description": "",
+  "main": "files.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "start": "npm build:css && node ./bin/www",
+    "build:css": "npx tailwindcss build ./views/tailwind.css -o ./public/css/app.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.0.1",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "lodash": "^4.17.20",
+    "mongoose": "^5.10.9",
+    "morgan": "^1.10.0",
+    "postcss-cli": "^8.1.0",
+    "tailwindcss": "^1.9.1"
+  }
+}

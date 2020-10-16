@@ -1,0 +1,19 @@
+<%- include('../commun/header.ejs') %>
+    <%- include('../commun/nav.ejs') %>
+    <div class="create-blog content">
+        <h2>New Blog</h2>
+        <form action="/blogs" method="POST">
+            <label for="title">title</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="snippet">snippet</label>
+            <input type="text" id="snippet" name="snippet" required>
+
+            <label for="body">body</label>
+            <textarea type="text" id="body" name="body" required></textarea>
+
+            <button>submit</button>
+        </form>
+    </div>
+
+<%- include('../commun/footer.ejs') %>
